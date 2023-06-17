@@ -1,21 +1,25 @@
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: #555555;
+
 }
 
 header {
-    position: relative;
-    background-color: white;
-    /* background-image: linear-gradient(to right, #ffffff, #fffb00); */
-    padding: 20px 0;
+    position: fixed;
+    background-color: #FFFFFF;
+    padding: 50px;
+    width: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
+    -2px -2px 4px rgba(255, 255, 255, 0.2);
 }
-
 .logo{
-    position: inherit;
-    left: 100px;
+    position: fixed;
+    left: 60px;
+    top: 35px;
 }
 .caja{
     width: 940px;
-    position:absolute;
+    position:fixed;
     margin: 0 auto;
     top: 110px;
     bottom: 150px;
@@ -23,9 +27,9 @@ header {
 }
 
 nav{
-    position: absolute;
-    top:10px;
-    right: 0;
+    position: fixed;
+    top: 60px;
+    right: 700px;
 }
 
 nav li{
@@ -47,9 +51,9 @@ nav a:hover{
 }
 
 .social-icons {
-    position:absolute;
-    top: 110px;
-    right: 150px;
+    position:fixed;
+    top: 50px;
+    right: 100px;
   }
   
 .social-icons a {
@@ -119,6 +123,10 @@ footer{
     font-size: 13px;
     margin:20px;
 }
+
+/*Estilos de la pagina contacto.html*/
+
+
 .ingreso-grupo {
     display: flex;
     justify-content: center;
@@ -191,7 +199,7 @@ td,th{
 .banner {
     width: 800px;
     margin: 1em auto;
-    
+    padding-top: 100px;
 }
 
 .banner img {
