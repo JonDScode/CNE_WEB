@@ -1,35 +1,33 @@
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #555555;
+    /* background-color: #555555; */
 
 }
 
-header {
-    position: fixed;
+/*ahora todos los parametros que estaban en header a nav, ahora dentro de nav estan los iconos sociales, el logo y los vinculos a las otras paginas*/
+.navbar {
+      position: fixed;
     background-color: #FFFFFF;
+    /*background: url(imagenes/bandera_colombia.png);
+    background-size: contain;*/
+    /*las lineas 9 y 10 son para cambiar el fondo de la barra de navegacion, la foto usada no tiene por que ser la definitiva, hay que quitar el fondo a los iconos sociales y a la foto del logo para que sean transparentes*/
     padding: 50px; /*esto es el tamaño vertical del fondo de la barra de navegación*/
-    width: 100%;/*esto es el ancho*/
+    width: 100%;    /*esto es el ancho*/
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
     -2px -2px 4px rgba(255, 255, 255, 0.2);
-    /*las lineas 12 y 13 son para la sombra de la barra, el primer parametro es el tamaño horizontal, el segundo es el vertical y el tercero es el valor del desenfoque*/
-}
-.logo{
-    position: fixed;/*he cambiado el valor de position en fixed a este y a las clases de nav y social-icon*/
-    left: 60px;
-    top: 35px;
-}
-.caja{
-    width: 940px;
-    position:fixed;
-    margin: 0 auto;
-    top: 110px;
-    bottom: 150px;
-    right: 700px;
+    /*las lineas 12 y 13 son para la sombra de la barra de navegación, el primer parametro es el tamaño horizontal, el segundo es el vertical y el tercero es el valor del desenfoque*/
+    top: 0;
 }
 
-nav{
+.logo{
+    position: fixed; /*ahora el valor de position es fixed en este y en las clases de nav y social-icon*/
+    left: 45px;
+    top: 15px;
+}
+
+.vinculos{
     position: fixed;
-    top: 60px;
+    top: 45px;
     right: 700px;
 }
 
@@ -53,7 +51,7 @@ nav a:hover{
 
 .social-icons {
     position:fixed;
-    top: 50px;
+    top: 30px;
     right: 100px;
   }
   
@@ -69,7 +67,8 @@ nav a:hover{
 .productos{
     width: 940px;
     margin: 0 auto;
-    padding: 50px;
+    padding: 200px;
+    padding-bottom: 160px;
 }
 
 
@@ -113,10 +112,12 @@ nav a:hover{
 }
 
 footer{
+    position: relative;
     text-align: center;
     background: url(imagenes/bg.jpg);
     padding:40px;
     width: 100%;
+    bottom: 0;
 }
 
 .copyright{
@@ -132,7 +133,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
+    height: 110vh; /* Ajusta la altura según tus necesidades */
   }
 
 form{ 
