@@ -3,33 +3,33 @@ body{
     /* background-color: #555555; */
 }
 
-/*ahora todos los parametros que estaban en header a nav, ahora dentro de nav estan los iconos sociales, 
-el logo y los vinculos a las otras paginas*/
-.navbar {
+/*ahora todos los parametros que estaban en header a nav, ahora dentro de nav estan los iconos sociales, el logo y los vinculos a las otras paginas*/
+.background {
     position: fixed;
+    display: inline-flex;
+    background-color: #FFFFFF;
+    width: 100vw;
+    height: 100px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.2);
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+.navbar {
+    position: relative;
     z-index: 1;
     top: 0;
     bottom: auto;
     left: 0;
     right: 0;
-    background-color: #FFFFFF;
-    background-size: 100%;
-    display: inline;
-    /*background: url(imagenes/bandera_colombia.png);
-    background-size: contain;*/
-    /*las lineas 9 y 10 son para cambiar el fondo de la barra de navegacion, la foto usada no tiene por que ser la definitiva, hay que quitar el fondo a los iconos sociales y a la foto del logo para que sean transparentes*/
-    padding: 50px 0px; 
-    width: 100vw;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2),
-    -2px -2px 4px rgba(255, 255, 255, 0.2);
-    /*las lineas 12 y 13 son para la sombra de la barra de navegación, el primer parametro es el tamaño horizontal, el segundo es el vertical y el tercero es el valor del desenfoque*/
-    text-align: center;
+    width: fit-content;
 }
 
 .logo{
     position: fixed; /*ahora el valor de position es fixed en este y en las clases de nav y social-icon*/
     left: 50px;
-    top: 25px;
+    top: 15px;
 }
 
 .vinculos{
@@ -56,7 +56,7 @@ el logo y los vinculos a las otras paginas*/
 
 .social-icons {
     position:fixed;
-    top: 40px;
+    top: 30px;
     right: 50px;
   }
   
@@ -130,7 +130,10 @@ footer{
     font-size: 13px;
     margin:20px;
 }
-
+main {
+    display: grid;
+    place-items: center;
+}
 /*Estilos de la pagina contacto.html*/
 
 
@@ -215,23 +218,50 @@ td,th{
 }
 
 /* estilos para el Hero */
-
+/* 
 .hero{
-    height: 400px; /* Ajusta la altura según tus necesidades */
+    height: 400px; Ajusta la altura según tus necesidades
     position: relative;
-}
+} */
   
 .slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
     overflow: hidden;
 }
-  
-.slide {
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite normal ease;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider img {
+width: 100%;
+}
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+/* .slide {
     flex: 0 0 100%;
     display: none;
     position: relative;
@@ -250,7 +280,7 @@ td,th{
     color: #fff;
     font-size: 18px;
     text-decoration: none;
-}
+} */
   
 /* Hasta aqui llegan los estilos de hero */
   
