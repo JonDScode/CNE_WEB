@@ -223,8 +223,65 @@ td,th{
     height: 400px; Ajusta la altura según tus necesidades
     position: relative;
 } */
-  
+
+.slider-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .slider {
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 .25rem .5rem #21212126;
+    border-radius: .5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+    animation: slide 16s infinite 4s normal;
+}
+
+@keyframes slide {
+    0% {transform: translateX(0%);}
+    20% {transform: translateX(0%);}
+    25% {transform: translateX(-100%);}
+    45% {transform: translateX(-100%);}
+    50% {transform: translateX(-200%);}
+    70% {transform: translateX(-200%);}
+    75% {transform: translateX(-300%);}
+    95% {transform: translateX(-300%);}
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    opacity: .75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav:hover{
+    opacity: 100%;
+}
+
+/* .slider {
     width: 1280px;
     height: auto;
     margin: 50px auto 0;
@@ -246,20 +303,7 @@ td,th{
 .slider img {
 width: 100%;
 }
-
-@keyframes slide {
-    0% {margin-left: 0%;}
-    20% {margin-left: 0%;}
-    
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
-}
+ */
 
 /* .slide {
     flex: 0 0 100%;
