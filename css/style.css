@@ -83,10 +83,28 @@ footer{
 }
 
 .copyright{
-    color:#FFFFFF;
-    font-size: 13px;
+    font-size: 15px;
     margin:20px;
 }
+
+.listas-footer{
+    width: 75%;
+    display: flex;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.listas-footer ul{
+    width: fit-content;
+    height: auto;
+    margin: 30px auto;
+}
+
+.listas-footer li:first-child{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 main {
     display: grid;
     place-items: center;
@@ -106,7 +124,7 @@ main {
 
 .slides{
     width: 500%;
-    height: 720px;
+    height: 480px;
     display: flex;
 }
 
@@ -128,12 +146,12 @@ main {
 
 .navigation-manual{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
     z-index: 2;
     width: 720px;
-    margin-top: 183px;
+    padding: 426px 0 40px;
     display: flex;
     justify-content: center;
 }
@@ -177,7 +195,7 @@ main {
     display: flex;
     width: 720px;
     justify-content: center;
-    margin-top: 500px;
+    padding: 426px 0 40px;
 }
 
 .navigation-auto div{
@@ -252,8 +270,7 @@ main {
 }
 
 .servicios{
-    padding: 3em 0;
-    background: #FEFEFE;
+    margin: 50px auto;
 }
 
 .contenido-servicios{
@@ -262,24 +279,24 @@ main {
 }
 
 .lista-servicios{
-    width: 40%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style-type: disc;
 }
 
 .items{
     line-height: 1.5;
+    font-weight: normal;
 }
 
-.items:before{
-    content:"★"
+.items:not(:last-child){
+    margin-bottom: 10px;
 }
 
-.items:first-child{
-    font-weight: bold;
-}
-
-.imagen-servicios{
+/* .imagen-servicios{
     width: 60%;
     transition: 400ms;
     box-shadow: 10px 10px 30px 15px #000000;
@@ -287,7 +304,7 @@ main {
 
 .imagen-servicios:hover{
     opacity: 0.3;
-}
+} */
 
 /* Estilos de la pagina empleo*/
   
