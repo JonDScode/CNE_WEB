@@ -1,37 +1,26 @@
 /* Estilos globales , header, main, footer.*/
 
+header{
+    width: 100%;
+    height: 100px;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
     /* background-color: #555555; */
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
-/*ahora todos los parametros que estaban en header a nav, ahora dentro de nav estan los iconos sociales, el logo y los vinculos a las otras paginas*/
-/* .background {
+.navbar {
     position: fixed;
     display: inline-flex;
     background-color: #FFFFFF;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), -2px -2px 4px rgba(255, 255, 255, 0.2);
     top: 0;
-    align-items: center;
-    justify-content: center;
-    z-index: -1;
-} */
-.navbar {
-    max-width: 900px;
-    margin: auto;
-    background-color: #fcf7f7;
-    font-size: 20px;
-    margin-top: 50px;
-    /* position: relative;
-    z-index: 1;
-    top: 0;
-    bottom: auto;
-    left: 0;
-    right: 0;
-    width: fit-content; */
+    z-index: 100;
 }
 
 .menu-horizontal{
@@ -49,7 +38,18 @@ body{
 
 .menu-horizontal > li:hover {
     background-color: #333;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
 
+.menu-horizontal > li:hover:first-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menu-horizontal > li:hover:last-child{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .menu-vertical {
@@ -58,6 +58,9 @@ body{
     list-style: none;
     width: 200px;
     background-color: rgba(0, 0, 0, 0.5);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .menu-horizontal li:hover .menu-vertical{
@@ -77,9 +80,15 @@ body{
 
 
 .logo{
-    position: fixed; /*ahora el valor de position es fixed en este y en las clases de nav y social-icon*/
-    left: 50px;
-    top: 15px;
+    position: relative; /*ahora el valor de position es fixed en este y en las clases de nav y social-icon*/
+    z-index: 2;
+    margin: auto auto auto 50px;
+    height: fit-content;
+}
+
+nav{
+    height: fit-content;
+    margin: auto;
 }
 
 .vinculos{
@@ -105,26 +114,31 @@ body{
 }
 
 .social-icons {
-    position:fixed;
-    top: 30px;
-    right: 50px;
-  }
-  
-.social-icons a {
-    display: inline-block;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: auto 50px auto auto;
+}
+
+.social-icons a{
+    height: fit-content;
+}
+
+.social-icons a:not(:last-child) {
     margin-right: 10px;
-  }
+}
   
 .social-icons img {
-    width: 40px; /* Ajusta el tamaño de los logos según tus necesidades */
-  }
-
+    width: 40px;
+    height: 40px;
+}
 
 footer{
     position: relative;
     text-align: center;
     background: url(/img/bg.jpg);
     padding:40px;
+    margin: auto 0 0;
     width: auto;
     bottom: 0;
 }
@@ -162,10 +176,9 @@ main {
 /*css for the slider*/
 
 .slider{
-    width: 720px;
+    width: 100%;
     height: 480px;
-    margin: 150px auto 0;
-    border-radius: 10px;
+    margin: 0px auto 0;
     overflow: hidden;
 }
 
@@ -185,8 +198,9 @@ main {
 }
 
 .slide img{
-    width: 720px;
+    width: 100%;
     height: 480px;
+    object-fit: cover;
 }
 
 /*css for manual navigation*/
@@ -197,14 +211,14 @@ main {
     left: 50%; */
     /* transform: translate(-50%, -50%); */
     z-index: 2;
-    width: 720px;
+    width: 100%;
     padding: 426px 0 40px;
     display: flex;
     justify-content: center;
 }
 
 .manual-btn{
-    border: 2px solid #40d3dc;
+    border: 2px solid #FFFFFF;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -216,7 +230,7 @@ main {
 }
 
 .manual-btn:hover{
-    background: #40d3dc;
+    background: #FFFFFF;
 }
 
 #radio1:checked ~ .first{
@@ -240,13 +254,13 @@ main {
 .navigation-auto{
     position: absolute;
     display: flex;
-    width: 720px;
+    width: 100%;
     justify-content: center;
     padding: 426px 0 40px;
 }
 
 .navigation-auto div{
-    border: 2px solid #40d3dc;
+    border: 2px solid #FFFFFF;
     padding: 5px;
     border-radius: 10px;
     transition: 0.5s;
@@ -257,19 +271,19 @@ main {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #40d3dc;
+    background: #FFFFFF;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #40d3dc;
+    background: #FFFFFF;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #40d3dc;
+    background: #FFFFFF;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #40d3dc;
+    background: #FFFFFF;
 }
 
 
@@ -356,10 +370,9 @@ main {
 /* Estilos de la pagina empleo*/
   
 .productos{
+    position: relative;
     width: 940px;
     margin: 0 auto;
-    padding: 200px;
-    padding-bottom: 160px;
 }
 
 

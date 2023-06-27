@@ -10,34 +10,50 @@
         <!-- <link rel="stylesheet" href="style-home.css"> -->
         <link rel="stylesheet" href="/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-        <script src="js/index.js"></script>
+        <script src="/js/index.js"></script>
     </head>
 
     <body>
         <header>
-                <nav id="navbar" class="navbar">
+            <div class="navbar">
 
-                    <div class="logo">
-                        <img width="150px" src="/img/name_logo.jpg">
-                    </div>
-                    <div class="background">
+                <div class="logo">
+                    <img width="150px" src="/img/CNE_logo.png">
+                </div>
+
+                    <nav>
                         <div class="vinculos">
-                            <ul>
+                            <ul class="menu-horizontal">
                                 <li><a href="/index.html">Inicio</a></li>
-                                <li><a href="/html/Empleo.html">Empleo</a></li>
-                                <li><a href="/html/Extranjeria.html">Extranjería</a></li>
+                                <li>
+                                    <a href="/html/Empleo.html">Empleo</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Empleo-Ofertas.html">Ofertas</a></li>
+                                        <li><a href="/Empleo-Demanda.html">Demanda</a></li>
+                                        <li><a href="/Empleo-Formación.html">Formación</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/html/Extranjeria.html">Extranjería</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Asilo.html">Asilo</a></li>
+                                        <li><a href="/Arraigo.html">Arraigo</a></li>
+                                        <li><a href="/Nacionalidad.html">Nacionalidad</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="/html/Noticias.html">Noticias</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="social-icons">
-                        <a href="#"><img src="/img/logo-face.png" alt="Facebook"></a>
-                        <a href="#"><img src="/img/logo-twitter.png" alt="Twitter"></a>
-                        <a href="#"><img src="/img/logo-insta.png" alt="Instagram"></a>
-                        <a href="#"><img src="/img/logo-whatsapp.png" alt="Instagram"></a>
-                    </div>
-                
-                </nav>
+                    </nav>
+
+                <div class="social-icons">
+                    <a href="/#"><img src="/img/logo-face.png" alt="Facebook" title="Facebook"></a>
+                    <a href="/#"><img src="/img/logo-twitter.png" alt="Twitter" title="Twitter"></a>
+                    <a href="/#"><img src="/img/logo-insta.png" alt="Instagram" title="Instagram"></a>
+                    <a href="/#"><img src="/img/logo-whatsapp.png" alt="WhatsApp" title="WhatsApp"></a>
+                </div>
+
+            </div>
         </header>
         <main>
            
@@ -90,8 +106,35 @@
         </main>
         
         <footer>
-            <!-- <img src="imagenes/bg.jpg"> -->
-            <p class="copyright">&copy Copyright CNE - 2023</p>
+            <div class="listas-footer">
+                <ul class="lista1">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista2">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista3">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista4">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p class="copyright">&copy Copyright CNE - 2023</p>
+            </div>
         </footer>
         
     </body>

@@ -10,57 +10,102 @@
     
     <body>
         <header>
-            <nav id="navbar" class="navbar">
+            <div class="navbar">
 
                 <div class="logo">
-                    <img width="150px" src="/img/name_logo.jpg">
+                    <img width="150px" src="/img/CNE_logo.png">
                 </div>
-                <div class="background">
-                    <div class="vinculos">
-                        <ul>
-                            <li><a href="/index.html">Inicio</a></li>
-                            <li><a href="/html/Empleo.html">Empleo</a></li>
-                            <li><a href="/html/Extranjeria.html">Extranjería</a></li>
-                            <li><a href="/html/Noticias.html">Noticias</a></li>
-                        </ul>
-                    </div>
-                </div>
+
+                    <nav>
+                        <div class="vinculos">
+                            <ul class="menu-horizontal">
+                                <li><a href="/index.html">Inicio</a></li>
+                                <li>
+                                    <a href="/html/Empleo.html">Empleo</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Empleo-Ofertas.html">Ofertas</a></li>
+                                        <li><a href="/Empleo-Demanda.html">Demanda</a></li>
+                                        <li><a href="/Empleo-Formación.html">Formación</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/html/Extranjeria.html">Extranjería</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Asilo.html">Asilo</a></li>
+                                        <li><a href="/Arraigo.html">Arraigo</a></li>
+                                        <li><a href="/Nacionalidad.html">Nacionalidad</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/html/Noticias.html">Noticias</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
                 <div class="social-icons">
-                    <a href="#"><img src="/img/logo-face.png" alt="Facebook"></a>
-                    <a href="#"><img src="/img/logo-twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="/img/logo-insta.png" alt="Instagram"></a>
-                    <a href="#"><img src="/img/logo-whatsapp.png" alt="Instagram"></a>
+                    <a href="/#"><img src="/img/logo-face.png" alt="Facebook" title="Facebook"></a>
+                    <a href="/#"><img src="/img/logo-twitter.png" alt="Twitter" title="Twitter"></a>
+                    <a href="/#"><img src="/img/logo-insta.png" alt="Instagram" title="Instagram"></a>
+                    <a href="/#"><img src="/img/logo-whatsapp.png" alt="WhatsApp" title="WhatsApp"></a>
                 </div>
-            
-            </nav>
+
+            </div>
         </header>
 
         <main>
-            <ul class="productos">
-                <li>
-                    <h2>Oferta</h2>
-                    <img src="/img/Empleo-1.png">
-                    <p class="producto-descripcion">Publica tus Ofertas de empleo</p>
-                    <p class="producto-precio">Formulario</p>
-                </li>
-                <li>
-                    <h2>Demanda</h2>
-                    <img src="/img/Empleo-1.png">
-                    <p class="producto-descripcion">Publica tus Servicios o Habilidades</p>
-                    <p class="producto-precio">Formulario</p>
-                </li>
-                <li>
-                    <h2>Formación</h2>
-                    <img src="/img/Empleo-1.png">
-                    <p class="producto-descripcion">Formacion para el trabajo disponible</p>
-                    <p class="producto-precio">Ingresar</p>
-                </li>
-            </ul>
+            <div class="productos">
+                <ul>
+                    <li>
+                        <h2>Oferta</h2>
+                        <img src="/img/Empleo-1.png">
+                        <p class="producto-descripcion">Publica tus Ofertas de empleo</p>
+                        <p class="producto-precio">Formulario</p>
+                    </li>
+                    <li>
+                        <h2>Demanda</h2>
+                        <img src="/img/Empleo-1.png">
+                        <p class="producto-descripcion">Publica tus Servicios o Habilidades</p>
+                        <p class="producto-precio">Formulario</p>
+                    </li>
+                    <li>
+                        <h2>Formación</h2>
+                        <img src="/img/Empleo-1.png">
+                        <p class="producto-descripcion">Formacion para el trabajo disponible</p>
+                        <p class="producto-precio">Ingresar</p>
+                    </li>
+                </ul>
+            </div>
         </main>
 
         <footer>
-            <!-- <img src="imagenes/logo-blanco.png"> -->
-            <p class="copyright">&copy Copyright CNE - 2023</p>
+            <div class="listas-footer">
+                <ul class="lista1">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista2">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista3">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista4">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p class="copyright">&copy Copyright CNE - 2023</p>
+            </div>
         </footer>
     </body>
 </html>

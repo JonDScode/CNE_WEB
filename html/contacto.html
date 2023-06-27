@@ -4,32 +4,50 @@
     <head>
         <meta charset="UTF-8">
         <title>Contacto - Colombianos Nuevos en España</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
         <header>
-            <nav id="navbar" class="navbar">
+            <div class="navbar">
+
                 <div class="logo">
-                    <img width="150px" src="imagenes/name_logo.jpg">
+                    <img width="150px" src="/img/CNE_logo.png">
                 </div>
 
-                <div class="vinculos">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Empleo.html">Empleo</a></li>
-                        <li><a href="Extranjeria.html">Extranjería</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-                
+                    <nav>
+                        <div class="vinculos">
+                            <ul class="menu-horizontal">
+                                <li><a href="/index.html">Inicio</a></li>
+                                <li>
+                                    <a href="/html/Empleo.html">Empleo</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Empleo-Ofertas.html">Ofertas</a></li>
+                                        <li><a href="/Empleo-Demanda.html">Demanda</a></li>
+                                        <li><a href="/Empleo-Formación.html">Formación</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="/html/Extranjeria.html">Extranjería</a>
+                                    <ul class="menu-vertical">
+                                        <li><a href="/Asilo.html">Asilo</a></li>
+                                        <li><a href="/Arraigo.html">Arraigo</a></li>
+                                        <li><a href="/Nacionalidad.html">Nacionalidad</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/html/Noticias.html">Noticias</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
                 <div class="social-icons">
-                    <a href="#"><img src="imagenes/logo-face.png" alt="Facebook"></a>
-                    <a href="#"><img src="imagenes/logo-twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="imagenes/logo-insta.png" alt="Instagram"></a>
-                    <a href="#"><img src="imagenes/logo-whatsapp.png" alt="Instagram"></a>
+                    <a href="/#"><img src="/img/logo-face.png" alt="Facebook" title="Facebook"></a>
+                    <a href="/#"><img src="/img/logo-twitter.png" alt="Twitter" title="Twitter"></a>
+                    <a href="/#"><img src="/img/logo-insta.png" alt="Instagram" title="Instagram"></a>
+                    <a href="/#"><img src="/img/logo-whatsapp.png" alt="WhatsApp" title="WhatsApp"></a>
                 </div>
-            </nav>
+
+            </div>
         </header>
         <main>
             <div class="ingreso-grupo">
@@ -98,8 +116,35 @@
         </main>
         
         <footer>
-            <!-- <img src=""  alt="Logo de Colombianos Nuevos en España"> -->
-            <p class="copyright">&copy Copyright CNE - 2023</p>
+            <div class="listas-footer">
+                <ul class="lista1">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista2">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista3">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+                <ul class="lista4">
+                    <li>Titulo</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                    <li>Links</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p class="copyright">&copy Copyright CNE - 2023</p>
+            </div>
         </footer>
     </body>
 </html>
