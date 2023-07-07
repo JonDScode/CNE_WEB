@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="/css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-        <script src="/js/index.js"></script>
     </head>
 
     <body>
@@ -156,46 +155,6 @@
          </div>
          <!--image slider end-->
 
-         <script type="text/javascript">
-            var counter = 1
-
-            // codigo para que el boton 1 lleve a la slide 1
-            function contadorA1(){
-                counter = 1
-            }
-            const boton1 = document.getElementById("radio1");
-            boton1.addEventListener("click", contadorA1)
-
-            // codigo para que el boton 2 lleve al slide 2
-            function contadorA2(){
-                counter = 2
-            }
-            const boton2 = document.getElementById("radio2");
-            boton2.addEventListener("click", contadorA2)
-
-            // codigo para que el boton 3 lleve a la slide 3
-            function contadorA3(){
-                counter = 3
-            }
-            const boton3 = document.getElementById("radio3");
-            boton3.addEventListener("click", contadorA3)
-
-            // codigo para que el boton 4 lleve a la slide 4
-            function contadorA4(){
-                counter = 4
-            }
-            const boton4 = document.getElementById("radio4");
-            boton4.addEventListener("click", contadorA4)
-
-            setInterval(function(){
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 4){
-                    counter = 1
-                }
-            }, 2000);
-         </script>
-
             <section class="principal">
 
                 <h2 class="titulo-principal">Sobre Colombianos Nuevos en España</h2>
@@ -251,35 +210,35 @@
             <div class="listas-footer">
                 <ul class="lista1">
                     <li>Conócenos</li>
-                    <li>Voluntariado</li>
-                    <li>Sobre CNE</li>
-                    <li>E-mail</li>
+                    <li><a href="">Voluntariado</a></li>
+                    <li><a href="">Sobre CNE</a></li>
+                    <li><a href="">E-mail</a></li>
                 </ul>
                 <ul class="lista2">
                     <li>Síguenos</li>
-                    <li>Twitter</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>YouTube</li>
-                    <li>Telegram</li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">YouTube</a></li>
+                    <li><a href="">Telegram</a></li>
                 </ul>
                 <ul class="lista3">
                     <li>Dona</li>
-                    <li>Bizum</li>
-                    <li>PayPal</li>
+                    <li><a href="">Bizum</a></li>
+                    <li><a href="">PayPal</a></li>
                 </ul>
                 <ul class="lista4">
                     <li>Legal</li>
-                    <li>Información legal</li>
-                    <li>Política de privacidad</li>
-                    <li>Política de cookies</li>
-                    <li>Usuarios</li>
+                    <li><a href="">Información legal</a></li>
+                    <li><a href="">Política de privacidad</a></li>
+                    <li><a href="">Política de cookies</a></li>
+                    <li><a href="">Usuarios</a></li>
                 </ul>
             </div>
             <div class="copyright">
                 <p class="copyright-text">&copy Copyright CNE - 2023</p>
             </div>
         </footer>
-        
+        <script src="/js/index.js"></script>
     </body>
 </html>
