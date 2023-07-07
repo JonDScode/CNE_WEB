@@ -46,7 +46,6 @@ body{
 }
 
 .menu-horizontal > li:hover {
-    background-color: rgba(0, 0, 0, 0.7);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -56,19 +55,28 @@ body{
     border-bottom-right-radius: 5px;
 }
 
+.lista-navbar{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+
 .menu-vertical {
     position: absolute;
     display: none;
     list-style: none;
-    width: 200px;
-    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 40%;
+    background-color: #FFFFFF;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .menu-horizontal li:hover .menu-vertical{
-    display: block;
+    position: fixed;
+    display: flex;
+    left: 0;
 }
 
 .menu-vertical li:hover {
@@ -76,10 +84,12 @@ body{
 }
 
 .menu-vertical li a{
+    position: relative;
     display: block;
-    color: white;
+    color: #000000;
     padding: 15px 15px 15px 20px;
     text-decoration: none;
+    margin: auto;
 }
 
 
